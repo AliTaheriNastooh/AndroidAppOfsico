@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Sat Aug 04 14:48:09 IRDT 2018
+0.baseType=DIRECTORY
+0.base=G\:\\myAndroidCode\\systemKeshavarzi\\destin\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\37
+0.path=classes.dex
+0.set=DEX
+count=1

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:weightSum="1">
+
+	<TableLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@drawable/backgroind">
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:id="@+id/textCompany"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:padding="5dp"
+				android:paddingBottom="20dp"
+				android:text="شرکت هوشمند سازان سیستم نوین فارس"
+				android:textColor="@android:color/holo_red_dark" />
+		</TableRow>
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<TextView
+				android:id="@+id/textView4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="40dp"
+				android:layout_marginTop="60dp"
+				android:padding="20dp"
+				android:text="شماره مربوط به سیستم کشاورزی را وارد کنید"
+				android:textColor="@android:color/black"
+				android:textSize="15sp" />
+		</TableRow>
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<EditText
+				android:id="@+id/editText1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="20dp"
+				android:ems="10"
+				android:inputType="numberDecimal" />
+		</TableRow>
+
+		<TableRow
+			android:layout_width="match_parent"
+			android:layout_height="match_parent" >
+
+			<Button
+				android:id="@+id/button"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_margin="50dp"
+				android:layout_marginLeft="20dp"
+				android:onClick="startTapped"
+				android:text="ورود" />
+		</TableRow>
+	</TableLayout>
+
+</LinearLayout>
