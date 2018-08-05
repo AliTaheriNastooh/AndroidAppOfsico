@@ -37,6 +37,9 @@ public class ChooseActivity extends Activity {
         TextView textOfToggleButton=(TextView)findViewById(R.id.textViewOfToogleButton);
         textOfToggleButton.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15f);
 
+        TextView textOfChooseAmaliat=(TextView)findViewById(R.id.textofChooseAmaliat);
+        textOfChooseAmaliat.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20f);
+
         NoDefaultSpinner spinner = (NoDefaultSpinner) findViewById(R.id.spinnerOfActivity);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
         R.array.Activity_array, android.R.layout.simple_spinner_item);

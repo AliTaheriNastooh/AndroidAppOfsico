@@ -2068,13 +2068,14 @@ public final class R {
     public static final int textView2=0x7f08004f;
     public static final int textView4=0x7f080050;
     public static final int textViewOfToogleButton=0x7f080051;
-    public static final int title=0x7f080052;
-    public static final int top=0x7f080053;
-    public static final int up=0x7f080054;
-    public static final int useLogo=0x7f080055;
-    public static final int withText=0x7f080056;
-    public static final int wrap=0x7f080057;
-    public static final int wrap_content=0x7f080058;
+    public static final int textofChooseAmaliat=0x7f080052;
+    public static final int title=0x7f080053;
+    public static final int top=0x7f080054;
+    public static final int up=0x7f080055;
+    public static final int useLogo=0x7f080056;
+    public static final int withText=0x7f080057;
+    public static final int wrap=0x7f080058;
+    public static final int wrap_content=0x7f080059;
   }
   public static final class integer {
     public static final int abc_max_action_buttons=0x7f090000;

@@ -411,11 +411,11 @@ public final class R {
         public static final int split_action_bar = 0x7f080047;
         public static final int submit_area = 0x7f08004c;
         public static final int tabMode = 0x7f08004d;
-        public static final int title = 0x7f080052;
-        public static final int up = 0x7f080054;
-        public static final int useLogo = 0x7f080055;
-        public static final int withText = 0x7f080056;
-        public static final int wrap_content = 0x7f080058;
+        public static final int title = 0x7f080053;
+        public static final int up = 0x7f080055;
+        public static final int useLogo = 0x7f080056;
+        public static final int withText = 0x7f080057;
+        public static final int wrap_content = 0x7f080059;
     }
     public static final class integer {
         public static final int abc_max_action_buttons = 0x7f090000;
