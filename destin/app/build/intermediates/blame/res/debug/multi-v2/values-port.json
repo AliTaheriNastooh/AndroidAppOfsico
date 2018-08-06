@@ -4,15 +4,8 @@
             "outputFile": "G:\\myAndroidCode\\systemKeshavarzi\\destin\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-port\\values-port.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\cfe78d0ab2593ba60ced835d79ef01ca\\res\\values-port\\values.xml",
+                    "source": "C:\\Users\\ASUS\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0-alpha3.aar\\4ac3cbef73e3fb0a0bbac478f7728898\\res\\values-port\\values-port.xml",
                     "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endColumns": "55",
-                        "endOffsets": "107"
-                    },
-                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",

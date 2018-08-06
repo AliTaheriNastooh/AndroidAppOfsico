@@ -58,36 +58,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        <LinearLayout
+            android:id="@+id/layoutOfGetChannelNumber"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal" >
-            <RadioButton
-                android:text="بازشدن فوری"
-                android:button="@null"
-                android:drawableBottom="@android:drawable/btn_radio"
-                android:gravity="center"
-                android:layout_weight="1"/>
+            android:orientation="vertical"
+            android:visibility="visible">
 
-            <RadioButton
-                android:text="بازشدن با تاخیر"
-                android:button="@null"
-                android:drawableBottom="@android:drawable/btn_radio"
-                android:gravity="center"
-                android:layout_weight="1"/>
-            <RadioButton
-                android:text="برنامه دوره ایی"
-                android:button="@null"
-                android:drawableBottom="@android:drawable/btn_radio"
-                android:gravity="center"
-                android:layout_weight="1"/>
-            <RadioButton
-                android:text="حذف دستورها"
-                android:button="@null"
-                android:drawableBottom="@android:drawable/btn_radio"
-                android:gravity="center"
-                android:layout_weight="1"/>
-        </RadioGroup>
+            <TextView
+                android:id="@+id/textViewOfGetChannelNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="شماره کانال را وارد کرده و  دکمه تماس را بفشارید:"
+                android:textColor="@android:color/holo_red_light"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextGetChannel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="شماره کانال را وارد کنید:"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:onClick="CallButtonForGetChannel"
+                android:text="تماس" />
+        </LinearLayout>
 
 
     </LinearLayout>
