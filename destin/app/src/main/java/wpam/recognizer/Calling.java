@@ -147,6 +147,8 @@ public class Calling extends Activity{
                             Toast.LENGTH_SHORT).show();
                     Log.i(TAG, message);
                     if (returningFromOffHook) {
+                        returningFromOffHook = false;
+                        ((ChooseActivity)mContext).getRecognizeDTMF();
                         // No need to do anything if >= version K
                         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
                             Log.i(TAG, mContext.getString(R.string.restarting_app));

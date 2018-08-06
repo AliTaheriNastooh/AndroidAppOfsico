@@ -35,6 +35,8 @@ public class ChooseActivity  extends Activity {
     ToggleButton simpleSwitch;
     LinearLayout getNumberOfChannel;
     Calling getCall;
+    private static final int REQUEST_CODE = 1;
+   StartDTMF_Decode dtmf_decode;
     int state=-1;
     public static final String EXTRA_MESSAGE1 = "wpam.recognizer.ChooseActivity.MESSAGE";
 
@@ -48,6 +50,8 @@ public class ChooseActivity  extends Activity {
 
 
 
+
+        dtmf_decode=new StartDTMF_Decode(this);
         Intent intent = getIntent();
         phoneNumber = intent.getStringExtra(MainActivity.EXTRA_MESSAGE1);
         TextView showNumber=(TextView)findViewById(R.id.textView2);
@@ -110,16 +114,24 @@ public class ChooseActivity  extends Activity {
             }
         });
     }
+
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public void CallButtonForGetChannel(View view){
         if(simpleSwitch.isChecked()){
 
         }else{
             if(state !=-1){
-                EditText getChannelNumber=findViewById(R.id.editTextGetChannel);
+                dtmf_decode.startDecode();
+                EditText getChannelNumber=(EditText)findViewById(R.id.editTextGetChannel);
                 getCall.setCall(phoneNumber+","+state+","+getChannelNumber.getText().toString()+" ,*");
+
             }
         }
+    }
+    public void getRecognizeDTMF(){
+        Toast.makeText(this,"text"+ dtmf_decode.getRecognizeredText(),Toast.LENGTH_SHORT).show();
+        Log.i("recognize Text----:", dtmf_decode.getRecognizeredText());
+        dtmf_decode.stopDecode();
     }
 //
 //    public void setFragement(View view){
@@ -136,6 +148,5 @@ public class ChooseActivity  extends Activity {
 //    }
 
     ////////////////////////////////////////////////////////////////////////////
-
 
 }

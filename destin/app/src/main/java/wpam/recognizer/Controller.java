@@ -18,9 +18,9 @@ public class Controller
 
 	private Character lastValue;
 		
-	public Controller(StartDTMF_Decode mainActivity)
+	public Controller(StartDTMF_Decode mainActivity1)
 	{
-		this.mainActivity = mainActivity;
+		this.mainActivity = mainActivity1;
 	}
 
 	public void changeState() 
@@ -31,18 +31,14 @@ public class Controller
 			lastValue = ' ';
 			
 			blockingQueue = new LinkedBlockingQueue<DataBlock>();
-			
-			//mainActivity.start();
-			Log.i("changeState",":in started==false1");
-			recordTask = new RecordTask(this,blockingQueue);
-			Log.i("changeState",":in started==false2");
-			recognizerTask = new RecognizerTask(this,blockingQueue);
-			Log.i("changeState",":in started==false3");
-			recordTask.execute();
-			Log.i("changeState",":in started==false5");
-			recognizerTask.execute();
-			Log.i("changeState",":in started==false6");
 			started = true;
+			//mainActivity.start();
+			recordTask = new RecordTask(this,blockingQueue);
+			recognizerTask = new RecognizerTask(this,blockingQueue);
+			recordTask.execute();
+			recognizerTask.execute();
+
+
 		} else {
 			
 			//mainActivity.stop();
@@ -75,6 +71,7 @@ public class Controller
 				mainActivity.addText(key);
 		
 		lastValue = key;
+		Log.i("changeState","caharcte: "+key);
 	}
 	public void showToast(String s){
 		mainActivity.showToast(s);
