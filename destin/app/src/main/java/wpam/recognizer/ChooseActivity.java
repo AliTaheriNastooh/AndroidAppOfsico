@@ -128,6 +128,12 @@ public class ChooseActivity  extends Activity {
             }
         }
     }
+    public void setIntentToNextPage(View view){
+        Intent intent1 = new Intent(this, GetDetails.class);
+        String message = "ChannelOff";
+        intent1.putExtra(EXTRA_MESSAGE1, message);
+        startActivity(intent1);
+    }
     public void getRecognizeDTMF(){
         Toast.makeText(this,"text"+ dtmf_decode.getRecognizeredText(),Toast.LENGTH_SHORT).show();
         Log.i("recognize Text----:", dtmf_decode.getRecognizeredText());

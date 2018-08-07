@@ -29,18 +29,18 @@ public class getChannelNumberAndCall extends Fragment {
     }
 
 
-    @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR1)
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view =inflater.inflate(R.layout.fragment_get_channel_number_and_call, container, false);
-        TextView me=(TextView)view.findViewById(R.id.textViewOfGetChannelNumber);
-        Bundle args = getArguments();
-        String index = args.getString("message", "");
-        me.setText(index);
-        return view;
-    }
+//    @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR1)
+//    @Override
+//    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+//                             Bundle savedInstanceState) {
+//        // Inflate the layout for this fragment
+//        View view =inflater.inflate(R.layout.fragment_get_channel_number_and_call, container, false);
+//        TextView me=(TextView)view.findViewById(R.id.textViewOfGetChannelNumber);
+//        Bundle args = getArguments();
+//        String index = args.getString("message", "");
+//        me.setText(index);
+//        return view;
+//    }
 
 
 
