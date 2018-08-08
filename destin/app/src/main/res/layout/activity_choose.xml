@@ -84,11 +84,11 @@
                 android:inputType="numberDecimal" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/buttonofCallDevice"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:onClick="setIntentToNextPage"
+                android:onClick="CallButtonForGetChannel"
                 android:text="تماس" />
         </LinearLayout>
 

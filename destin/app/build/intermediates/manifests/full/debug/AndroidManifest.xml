@@ -15,6 +15,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
 
     <application
         android:debuggable="true"
@@ -33,6 +35,15 @@
         </activity>
         <activity android:name="wpam.recognizer.ChooseActivity" />
         <activity android:name="wpam.recognizer.GetDetails" />
+
+        <receiver
+            android:name="wpam.recognizer.SMS_Receiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

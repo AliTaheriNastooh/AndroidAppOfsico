@@ -48,6 +48,8 @@ public class MainActivity extends Activity {
     public void startTapped(View view){
         Intent intent1 = new Intent(this, ChooseActivity.class);
         EditText editText = (EditText) findViewById(R.id.editText1);
+//        Toast.makeText(getApplicationContext(),editText.getText().toString().length(),Toast.LENGTH_SHORT).show();
+        Log.i("hey--------------: ",Integer.toString(editText.getText().toString().length()));
         String message = editText.getText().toString();
         intent1.putExtra(EXTRA_MESSAGE1, message);
         startActivity(intent1);

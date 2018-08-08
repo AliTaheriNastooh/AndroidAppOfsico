@@ -8,6 +8,7 @@
     tools:context=".GetDetails">
 
     <LinearLayout
+        android:id="@+id/linearLayoutOfHowConnectWithDevice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content" />
 
     <LinearLayout
+        android:id="@+id/LinearLayoutOfSetChange"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="bottom|center"
